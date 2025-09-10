@@ -1,0 +1,31 @@
+1. Jelaskan multidimensional arrays dan berikan contoh
+
+Array multidimensi adalah sebuah struktur yang dapat menampung array lain di dalamnya,
+yang dapat menciptakan struktur data yang lebih kompleks seperti dua dimensi atau tiga dimensi
+seperti kubus.
+
+2. Sebutkan dan jelaskan 13 method-method string dalam Java
+
+length() Mengembalikan jumlah karakter dalam sebuah string.
+charAt(int index) Mengambil karakter pada posisi tertentu (indeks dimulai dari 0).
+substring(int beginIndex) Mengambil bagian string mulai dari indeks tertentu hingga akhir.
+substring(int beginIndex, int endIndex)  Mengambil bagian string dari indeks awal hingga sebelum indeks akhir.
+toUpperCase()  Mengubah semua huruf dalam string menjadi huruf kapital.
+toLowerCase()  Mengubah semua huruf dalam string menjadi huruf kecil.
+trim() Menghapus spasi di awal dan akhir string.
+equals(String another)  Membandingkan isi dua string secara case-sensitive (memperhatikan besar kecil huruf).
+equalsIgnoreCase(String another)  Membandingkan isi dua string tanpa membedakan besar kecil huruf.
+compareTo(String another)  Membandingkan dua string berdasarkan urutan leksikografis (kamus).
+contains(CharSequence seq)  Mengecek apakah string mengandung urutan karakter tertentu.
+replace(CharSequence target, CharSequence replacement)  Mengganti bagian string tertentu dengan string lain.
+split(String regex)  Memecah string menjadi array berdasarkan pemisah tertentu (delimiter/regex).
+
+3. Sebutkan 2 keuntungan Immutability dalam Java.
+
+Keamanan Data (Thread-Safe):
+Objek String yang immutable aman digunakan dalam lingkungan multithreading karena nilainya tidak bisa diubah
+setelah dibuat. Hal ini mencegah terjadinya konflik atau inkonsistensi data saat diakses oleh banyak thread.
+
+Caching dan Reusability:
+Karena immutable, objek String bisa disimpan dalam String Pool dan digunakan kembali tanpa perlu
+membuat objek baru. Ini menghemat memori dan meningkatkan performa program.
